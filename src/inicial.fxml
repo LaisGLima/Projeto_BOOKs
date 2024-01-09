@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="784.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InicialController">
+   <children>
+      <ImageView fitHeight="784.0" fitWidth="1200.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@imagens/inicial.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1057.0" layoutY="54.0" text="Sair" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Pane layoutX="300.0" layoutY="55.0" onMouseClicked="#switchToCadastro" prefHeight="41.0" prefWidth="207.0" />
+      <Pane layoutX="507.0" layoutY="55.0" onMouseClicked="#switchToLocação" prefHeight="41.0" prefWidth="220.0" />
+      <Pane layoutX="730.0" layoutY="64.0" onMouseClicked="#switchToPagamento" prefHeight="22.0" prefWidth="187.0" />
+      <Pane layoutX="1045.0" layoutY="20.0" onMouseClicked="#switchToLogin" prefHeight="60.0" prefWidth="50.0" />
+      <MenuButton fx:id="menuButton" layoutX="76.0" layoutY="165.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="263.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-border-color: gray; -fx-border-radius: 30;" text="Selecione">
+         <items>
+            <MenuItem fx:id="Geralmenu" mnemonicParsing="false" style="-fx-pref-width: 245; -fx-pref-height: 40.0;" text="Geral" />
+            <MenuItem fx:id="Titulomenu" mnemonicParsing="false" style="-fx-pref-width: 245; -fx-pref-height: 40.0;" text="Título" />
+            <MenuItem fx:id="Autormenu" mnemonicParsing="false" style="-fx-pref-width: 245; -fx-pref-height: 40.0;" text="Autor" />
+            <MenuItem fx:id="Editoramenu" mnemonicParsing="false" style="-fx-pref-width: 245; -fx-pref-height: 40.0;" text="Editora" />
+            <MenuItem fx:id="Gêneromenu" mnemonicParsing="false" style="-fx-pref-width: 245; -fx-pref-height: 40.0;" text="Gênero" />
+         </items>
+      </MenuButton>
+      <HBox alignment="CENTER" layoutX="773.0" layoutY="24.0" prefHeight="33.0" prefWidth="252.0" style="-fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 30;">
+         <children>
+            <TextField fx:id="buscaField" prefHeight="17.0" prefWidth="205.0" promptText="Buscar..." style="-fx-background-color: #4D74A3; -fx-text-fill: white;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+         </TextField>
+
+         </children>
+      </HBox>
+      <ImageView fx:id="cardFalha" fitHeight="250.0" fitWidth="188.0" layoutX="282.0" layoutY="288.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@imagens/CARD.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="resultScrollPane" hbarPolicy="ALWAYS" layoutX="93.0" layoutY="253.0" prefHeight="450.0" prefWidth="1022.0" style="-fx-background-color: white;" vbarPolicy="NEVER">
+         <content>
+            <HBox fx:id="cardContainer" prefHeight="434.0" prefWidth="280.0">
+            </HBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

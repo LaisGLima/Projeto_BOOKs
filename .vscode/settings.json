@@ -1,0 +1,24 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "c:\\Program Files\\Java\\mysql\\mysql-connector-j-8.2.0\\mysql-connector-j-8.2.0.jar",
+            "c:\\Program Files\\Java\\jdk-21\\javafx-sdk-21.0.1\\lib\\javafx.base.jar",
+            "c:\\Program Files\\Java\\jdk-21\\javafx-sdk-21.0.1\\lib\\javafx.controls.jar",
+            "c:\\Program Files\\Java\\jdk-21\\javafx-sdk-21.0.1\\lib\\javafx.fxml.jar",
+            "c:\\Program Files\\Java\\jdk-21\\javafx-sdk-21.0.1\\lib\\javafx.graphics.jar",
+            "c:\\Program Files\\Java\\jdk-21\\javafx-sdk-21.0.1\\lib\\javafx.media.jar",
+            "c:\\Program Files\\Java\\jdk-21\\javafx-sdk-21.0.1\\lib\\javafx.swing.jar",
+            "c:\\Program Files\\Java\\jdk-21\\javafx-sdk-21.0.1\\lib\\javafx.web.jar",
+            "c:\\Program Files\\Java\\jdk-21\\javafx-sdk-21.0.1\\lib\\javafx-swt.jar",
+            "c:\\Program Files\\Java\\jdk-21\\mysql-connector-j-8.2.0\\mysql-connector-j-8.2.0.jar"
+        ],
+        "exclude": [
+            "c:\\Program Files\\Java\\mysql\\mysql-connector-j-8.2.0\\mysql-connector-j-8.2.0.jar",
+            "c:\\Program Files\\Java\\jdk-21\\mysql-connector-j-8.2.0\\mysql-connector-j-8.2.0.jar",
+            "c:\\Program Files\\Java\\jdk-21\\javafx-sdk-21.0.1\\lib\\javafx.web.jar"
+        ]
+    }
+}
